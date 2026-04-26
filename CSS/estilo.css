@@ -1,0 +1,295 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.encabezado {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px 14px;
+    border-bottom: 4px solid rgb(2, 92, 92);
+}
+
+.encabezado h1 {
+    margin: 0 0 12px;
+    font-size: 36px;
+}
+
+.menu {
+    margin-top: 8px;
+}
+
+.menu-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-lista li {
+    display: inline-block;
+    margin: 4px 6px;
+}
+
+.menu-lista a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-lista a:hover,
+.menu-lista a.activo {
+    background-color: rgb(2, 92, 92);
+}
+
+.contenido {
+    flex: 1;
+    width: min(100%, 1100px);
+    margin: 0 auto;
+    padding: 28px 18px 34px;
+}
+
+.seccion-principal {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.seccion-principal h2 {
+    color: #c0392b;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.seccion-principal p {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.marco,
+.card-contenido,
+.card-tabla,
+.card-formulario {
+    background-color: white;
+    border: 2px solid #d5d5d5;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    margin-bottom: 26px;
+}
+
+.grid-dos-columnas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.card-contenido h3,
+.card-tabla h3,
+.card-formulario h3 {
+    margin-top: 0;
+    text-align: center;
+    color: rgb(2, 92, 92);
+}
+
+.lista-destacada {
+    padding-left: 18px;
+    line-height: 1.7;
+}
+
+.imagen-marco {
+    display: block;
+    width: min(100%, 320px);
+    margin: 18px auto 8px;
+    border: 4px solid #555;
+    border-radius: 14px;
+    padding: 6px;
+    background-color: #fff;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.barra-informativa {
+    margin-top: 14px;
+    padding: 12px 14px;
+    border-left: 5px solid rgb(2, 92, 92);
+    background-color: #eef8f8;
+    border-radius: 8px;
+}
+
+.tabla-servicios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+    border: 2px solid #444;
+}
+
+.tabla-servicios caption {
+    caption-side: top;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #333;
+}
+
+.tabla-servicios th,
+.tabla-servicios td {
+    border: 1px solid #999;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tabla-servicios thead {
+    background-color: rgb(2, 92, 92);
+    color: white;
+}
+
+.tabla-servicios tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabla-servicios tbody tr:hover {
+    background-color: #dff3f3;
+}
+
+.tabla-servicios tfoot td {
+    background-color: #ebebeb;
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+}
+
+.formulario-contacto,
+.formulario-registro {
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.campo {
+    margin-bottom: 14px;
+}
+
+.formulario-contacto label,
+.formulario-registro label,
+legend {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #111;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea,
+.formulario-contacto select,
+.formulario-registro input,
+.formulario-registro textarea,
+.formulario-registro select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.formulario-contacto textarea,
+.formulario-registro textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+fieldset {
+    border: 2px solid #cfd8dc;
+    border-radius: 10px;
+    padding: 12px 14px;
+    margin: 0 0 14px;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.radio-opcion {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.radio-opcion input {
+    width: auto;
+}
+
+.radio-opcion label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.boton-principal {
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    background-color: rgb(2, 92, 92);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-principal:hover {
+    background-color: rgb(1, 72, 72);
+}
+
+.pie-pagina {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    border-top: 4px solid rgb(2, 92, 92);
+}
+
+.pie-pagina p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .encabezado h1 {
+        font-size: 28px;
+    }
+
+    .menu-lista li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .grid-dos-columnas {
+        grid-template-columns: 1fr;
+    }
+}
