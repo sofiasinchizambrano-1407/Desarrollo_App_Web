@@ -1,2 +1,25 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Normalizar saltos de línea
+* text=auto
+
+# Archivos web como texto
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Imágenes como binarios
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.svg text eol=lf
+
+git add .gitattributes
+git add .
+git commit -m "Configurar gitattributes y subir proyecto"
+git push
